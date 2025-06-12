@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Jogo da Velha Online</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Jogo da Velha Online</h1>
-  <div id="status">Aguardando outro jogador...</div>
-  <div id="board"></div>
-
+  <h2 id="status">🕹️ Aguardando jogadores: 0/2</h2>
+  <div id="tabuleiro">
+    <div class="celula" data-pos="0"></div>
+    <div class="celula" data-pos="1"></div>
+    <div class="celula" data-pos="2"></div>
+    <div class="celula" data-pos="3"></div>
+    <div class="celula" data-pos="4"></div>
+    <div class="celula" data-pos="5"></div>
+    <div class="celula" data-pos="6"></div>
+    <div class="celula" data-pos="7"></div>
+    <div class="celula" data-pos="8"></div>
+  </div>
   <script src="/socket.io/socket.io.js"></script>
   <script src="script.js"></script>
 </body>
