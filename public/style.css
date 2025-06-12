@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
